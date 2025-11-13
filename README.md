@@ -121,14 +121,16 @@ Foi desenvolvido um relatório adicional no Power BI que permite comparar as ven
 
 ---
 
-📌 **Exemplo de Fórmula DAX**
+📌 **Exemplo de Fórmula DAX**  -- [📄 dax_formulas.md](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/dax_formulas.md)
+
+
 ![Funções DAX](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/funções_dax.png)
--- [📄 dax_formulas.md](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/dax_formulas.md)
 
 **Total Sales**
 ```dax
 Total Sales = SUM(F_Vendas[Sales])
-Essa medida calcula o total de vendas agregando o campo  da tabela fato 
+Essa medida calcula o total de vendas agregando o campo  da tabela fato
+ ```
 
 
 ✅ **Boas Práticas Aplicadas**

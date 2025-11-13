@@ -5,7 +5,7 @@ Este projeto tem como finalidade transformar a tabela única **Financial Sample*
 
 - [📊 Dax_Starschema.pbix (download)](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/raw/main/docs/Dax_Starschema.pbix)
 
----
+---![Star Schema - Modelo Dimensional](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/Star_schema_vendas.png)
 
 🧠 **Escopo da Análise**  
 O modelo permite responder perguntas como:  
@@ -33,7 +33,7 @@ Contém os eventos de venda por produto e data.
 • Country  
 • Salers  
 
-![Star Schema - Modelo Dimensional](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/Star_schema_vendas.png)
+
 
 ---
 
@@ -80,6 +80,7 @@ Contém os eventos de venda por produto e data.
 
 ### D_Calendário  
 Criada via DAX com `CALENDARAUTO()` para gerar automaticamente um intervalo contínuo de datas com base nas tabelas do modelo.
+
 ![Tabela Date DAX](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/tabela_date_dax.png)
 
 **Campos principais:**  
@@ -121,20 +122,16 @@ Foi desenvolvido um relatório adicional no Power BI que permite comparar as ven
 ---
 
 📌 **Exemplo de Fórmula DAX**
+![Funções DAX](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/funções_dax.png)
+-- [📄 dax_formulas.md](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/dax_formulas.md)
 
 **Total Sales**
 ```dax
 Total Sales = SUM(F_Vendas[Sales])
-Essa medida calcula o total de vendas agregando o campo  da tabela fato .
+Essa medida calcula o total de vendas agregando o campo  da tabela fato 
 
--- [📄 dax_formulas.md](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/dax_formulas.md)
 
-📄 Imagens das fórmulas DAX
-
-![Funções DAX](https://github.com/vbiscaia-ai/Relatorio_vendas_dax/blob/main/docs/funções_dax.png)  
-  
-
-✅ Boas Práticas Aplicadas
+✅ **Boas Práticas Aplicadas**
 • Criação de surrogate keys no ETL para estabilidade dos relacionamentos
 • Uso da fórmula DAX  para geração automática da dimensão de tempo
 • Ordenação de colunas categóricas de produtos por atributos numéricos (ex.: Id)
@@ -143,4 +140,4 @@ Essa medida calcula o total de vendas agregando o campo  da tabela fato .
 
 Autor: Victor Biscaia
 Local: Salvador, Bahia – Brasil
-LinkedIn:
+LinkedIn: https://www.linkedin.com/in/victor-biscaia-097603371/
